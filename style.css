@@ -1,0 +1,472 @@
+:root
+{
+  --blue : #2C2546;
+  --dark-blue : #1B1535;
+  --green : #00EB09;
+  --white : #fff;
+  --red : #fa0000;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: 'border-box;
+  font-family: 'Tahoma';
+}
+
+body
+{
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+header
+{
+  text-align: center;
+  background-color: var(--blue);
+  position: fixed;
+  width: 100%;
+  font-weight: bold;
+  padding: 3%;
+  top: 0;
+}
+
+.title-h
+{
+  color: var(--green);
+  border-bottom: 2px solid var(--white);
+  font-size: 15pt;
+}
+
+.title-q
+{
+  color: var(--green);
+  font-weight: bold;
+  font-size: 15pt;
+}
+
+.title-z
+{
+  color: var(--white);
+  font-weight: bold;
+}
+
+.input-search
+{
+  width: 30%;
+  border: none;
+  border-radius: 0 0 0 15px;
+  padding: 2px;
+}
+
+.input-submit
+{
+  margin-left: -5px;
+  border: none;
+  border-radius: 0 15px 0 0;
+  padding: 2px;
+  background-color: var(--green);
+  width: 10%;
+  font-weight: bold;
+}
+
+nav
+{
+  margin-top: 15px;
+}
+
+nav ul
+{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+nav ul li a 
+{
+  color: var(--green);
+}
+
+nav ul li a:hover
+{
+  border-bottom: 3px solid var(--white);
+}
+
+.slider
+{
+    margin-top: 10%;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 75%;
+}
+
+.slider h4
+{
+    margin-top: 20%;
+}
+
+.slides
+{
+    display: flex;
+    width: 50rem;
+    overflow: hidden;
+}
+
+.slides img 
+{
+    border-radius: 20px;
+}
+
+.slide
+{
+    width: 50rem;
+    transition: .5s;
+}
+
+.choose_1:checked ~ .slides > .s1
+{
+    margin-left: -0rem;
+}
+
+.choose_2:checked ~ .slides > .s1
+{
+    margin-left: -50rem;
+}
+
+.choose_3:checked ~ .slides > .s1
+{
+
+    margin-left: -100rem;
+}
+
+.overlay 
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target 
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup 
+{
+    margin: 70px auto;
+    padding: 20px;
+    background: var(--dark-blue);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: var(--white);
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover 
+{
+    color: #06D85F;
+}
+
+.content 
+{
+    max-height: 30%;
+    width: 50%;
+}
+
+.title-p
+{
+  margin-left: 50px;
+  margin-top: 5%;
+}
+
+.populer
+{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.populer img
+{
+  border-radius: 10px;
+  width: 90%;
+}
+
+.title-g
+{
+  margin-left: 50px;
+  margin-top: 5%;
+}
+
+.game
+{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.game img
+{
+  border-radius: 10px;
+  width: 90%;
+}
+
+.title-pulsa
+{
+  margin-left: 50px;
+  margin-top: 5%;
+}
+
+.pulsa
+{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.pulsa img
+{
+  border-radius: 10px;
+  width: 90%;
+}
+
+.title-v
+{
+  margin-left: 50px;
+  margin-top: 5%;
+}
+
+.voucher
+{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.voucher img
+{
+  border-radius: 10px;
+  width: 90%;
+}
+
+  .link img
+  {
+    width: 80%;
+  }
+
+.judul-produk
+{
+  font-weight: bold;
+}
+
+.content 
+{
+  font-weight: bold;
+}
+
+.harga
+{
+  color: var(--green);
+}
+
+.link a 
+{
+  color: var(--white);
+}
+
+.link a:hover
+{
+  color: var(--green);
+}
+
+.pesan
+{
+  background-color: var(--green);
+  color: var(--white);
+  padding:4%;
+  border-radius: 10px;
+  font-size: 8pt;
+  ;
+}
+
+.pesan:hover
+{
+  background-color: var(--white);
+}
+
+.pesan img
+{
+  width: 15px;
+}
+
+.tentang
+{
+    display: grid;
+    justify-content: center;
+    margin-top: 10%;
+    font-size: 15pt;
+}
+ 
+.card
+{
+    background-color: var(--blue);
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 20px 20px black;
+}
+ 
+.card h1
+{
+    text-align: center;
+}
+ 
+html
+{
+    scroll-behavior: smooth;
+}
+ 
+ 
+footer
+{
+    display: grid;
+    justify-content: center;
+    background-color: var(--blue);
+    margin-top: 10%;
+    padding: 2%;
+}
+ 
+.sosmed img 
+{
+    width: 50px;
+}
+ 
+#copyright
+{
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px)
+{
+  nav ul li a 
+  {
+    font-size: 11pt;
+  }
+    
+  .slider
+  {
+    display: none;
+  }
+  
+  .title-p
+  {
+    padding-top: 4rem;
+    margin-left: 20px;
+  }
+  
+   .populer
+  {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-size: 10pt;
+  }
+  
+    .title-g
+  {
+    padding-top: 8;
+    margin-left: 20px;
+  }
+  
+ .game
+  {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-size: 10pt;
+  }
+  
+  .title-pulsa
+  {
+    padding-top: 4rem;
+    margin-left: 20px;
+  }
+  
+   .pulsa
+  {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-size: 10pt;
+  }
+  
+   .title-v
+  {
+    padding-top: 4;
+    margin-left: 20px;
+  }
+  
+ .voucher
+  {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-size: 10pt;
+  }
+  
+  .popup
+  {
+    width: 60%;
+  }
+  
+  .link img
+  {
+    width: 80%;
+  }
+  
+  .tentang
+  {
+    width: 90%;
+    padding-left: 1rem;
+    font-size: 13pt;
+  }
+  
+  .sosmed
+  {
+    font-size: 10pt;
+    padding-left: 6rem;
+  }
+  
+  .sosmed img
+  {
+    width: 10%;
+  }
+}
